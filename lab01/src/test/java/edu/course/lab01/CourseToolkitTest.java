@@ -23,6 +23,6 @@ class CourseToolkitTest {
     @Test
     void returnsTrueForZero() {
         boolean result = CourseToolkit.isEven(0);
-        assertTrue(result);
+        assertTrue(result)  ;
     }
 }
