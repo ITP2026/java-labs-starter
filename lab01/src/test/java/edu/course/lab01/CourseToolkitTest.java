@@ -122,4 +122,18 @@ class CourseToolkitTest {
     void average_throwsForNullArray() {
         assertThrows(IllegalArgumentException.class, () -> CourseToolkit.average(null));
     }
+
+    @Test
+    void minForArray_findMinForDifferentValues() {
+        double result = CourseToolkit.minForArray(new int[]{-2, 4, -5});
+
+        assertEquals(-5, result);
+    }
+
+    @Test
+    void maxForArray_findMaxForDifferentValues() {
+        double result = CourseToolkit.maxForArray(new int[]{-1, 5, 1});
+
+        assertEquals(5, result);
+    }
 }
