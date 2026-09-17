@@ -47,4 +47,34 @@ public final class CourseToolkit {
     public static boolean isEven(int number) {
         return number % 2 == 0;
     }
+        
+
+    // доп задания
+    public static int min(int[] values) {
+        if (values == null || values.length == 0) {
+            throw new IllegalArgumentException("Массив не может быть null или пустым");
+        }
+        int minValue = values[0];
+        for (int i = 1; i < values.length; i++) {
+            if (values[i] < minValue) {
+                minValue = values[i];
+            }
+        }
+        return minValue;
+    }
+
+   
+    public static int max(int[] values) {
+        if (values == null || values.length == 0) {
+            throw new IllegalArgumentException("Массив не может быть null или пустым");
+        }
+        int maxValue = values[0];
+        for (int i = 1; i < values.length; i++) {
+            if (values[i] > maxValue) {
+                maxValue = values[i];
+            }
+        }
+        return maxValue;
+    }
+
 }
