@@ -83,4 +83,25 @@ class CourseToolkitTest {
         assertThrows(IllegalArgumentException.class,
                 () -> CourseToolkit.average(null));
     }
+
+    // тесты для min и max
+    @Test
+    void minReturnsSmallestElement() {
+        assertEquals(1, CourseToolkit.min(new int[]{3, 1, 4, 1, 5, 9, 2, 6}));
+    }
+
+    @Test
+    void minHandlesSingleElement() {
+        assertEquals(42, CourseToolkit.min(new int[]{42}));
+    }
+
+    @Test
+    void maxReturnsLargestElement() {
+        assertEquals(11, CourseToolkit.max(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}));
+    }
+
+    @Test
+    void maxHandlesSingleElement() {
+        assertEquals(1000, CourseToolkit.max(new int[]{1000}));
+    }
 }

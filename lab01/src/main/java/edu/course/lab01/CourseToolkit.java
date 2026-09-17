@@ -66,4 +66,30 @@ public final class CourseToolkit {
         }
         return (double) sum / values.length;
     }
+
+    public static int min(int[] numbers){
+        if (numbers == null || numbers.length == 0){
+            throw new IllegalArgumentException("массив не может быть пустым");
+        }
+        int minimum = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] < minimum) {
+                minimum = numbers[i];
+            }
+        }
+        return minimum;
+    }
+
+    public static int max(int[] numbers){
+        if (numbers == null || numbers.length == 0){
+            throw new IllegalArgumentException("массив не может быть пустым");
+        }
+        int maximum = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > maximum) {
+                maximum = numbers[i];
+            }
+        }
+        return maximum;
+    }
 }
