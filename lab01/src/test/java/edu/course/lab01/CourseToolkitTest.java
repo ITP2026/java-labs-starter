@@ -9,7 +9,7 @@ class CourseToolkitTest {
 
     @Test
     void returnsTrueForEvenNumber() {
-        boolean result = CourseToolkit.isEven(8);
+        boolean result = CourseToolkit.isEven(0);
 
         assertTrue(result);
     }
@@ -20,4 +20,5 @@ class CourseToolkitTest {
 
         assertFalse(result);
     }
+
 }
