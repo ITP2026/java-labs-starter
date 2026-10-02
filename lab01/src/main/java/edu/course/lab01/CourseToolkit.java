@@ -15,3 +15,4 @@ public final class CourseToolkit {
     public static boolean isEven(int number) {
         return number % 2 == 0;
     }
+}
